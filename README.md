@@ -96,15 +96,17 @@ endmodule
 ```
 
 ### RTL LOGIC  
-![171608079-0b270c04-d27f-4965-8995-7f973fdfb688](https://user-images.githubusercontent.com/93427278/171614550-2a51cf47-6bac-4da2-878e-6418acfb840e.png)
+![encoderrtl](https://user-images.githubusercontent.com/93427278/171660188-6dfff037-8fce-4eef-a898-961b6f5c9d02.png)
 
 ### TIMING DIGRAMS  
-<img width="356" alt="171608248-31d6098c-6402-415a-a4e4-fea3e357f9f4" src="https://user-images.githubusercontent.com/93427278/171614925-c5222132-30ad-4181-8195-cecb73cb2b22.png">
+![encoder-timing](https://user-images.githubusercontent.com/93427278/171659718-f2398bfd-2eb3-40ac-9ce7-1718f7095564.png)
+
 
  ### TRUTH TABLE
-![171608406-f2a1ea02-4605-4c44-a5bb-3524796fae5b](https://user-images.githubusercontent.com/93427278/171614942-48333afd-ef8a-4c6c-8d4b-71ae83d787b1.png)
+ ![171645891-e4f37212-36aa-40b9-88c3-7f48a221f15e](https://user-images.githubusercontent.com/93427278/171660297-0a827cd4-11b2-4b7b-80bf-6a790209d295.png)
 
-### ENCODER
+
+### DECODER
 ```
 module Ex08(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
 input a,b,c;
@@ -121,13 +123,14 @@ endmodule
 ```
 
 ### RTL LOGIC
-![171608672-709d8e37-0ae0-4722-b074-68eccba9040d](https://user-images.githubusercontent.com/93427278/171640734-88d96405-48c5-4529-a7d7-9e4c7bed0635.png)
+![decoderrtl](https://user-images.githubusercontent.com/93427278/171660382-861724fe-fbb3-4aae-b3b1-dd3cbed504a6.png)
 
 ### TIMING DIGRAMS
-<img width="1262" alt="171608728-64ad0793-067c-4bc7-826b-8aa024e91b95" src="https://user-images.githubusercontent.com/93427278/171640762-e00e319c-5d9a-4644-b96c-992ff7c83d81.png">
+![decoder-timing](https://user-images.githubusercontent.com/93427278/171659873-59b336c4-593f-46df-ac72-a8ad99fa80cd.png)
+
 
 ### TRUTH TABLE
-![171608795-74b6b293-09a3-4343-843a-8c6da756cde8](https://user-images.githubusercontent.com/93427278/171640809-846b877d-70fa-4990-96ef-9b96240fb9f4.jpg)
+![decodertt](https://user-images.githubusercontent.com/93427278/171660478-4e762fab-716f-4b63-96b3-41c1b3dcc0bd.jpg)
 
 ### RESULTS 
 Thus, 8 to 3 Encoder and 3 to 8 Decoder is implemented using verilog and its outputs is validated.
