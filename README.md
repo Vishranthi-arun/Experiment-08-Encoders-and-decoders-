@@ -84,7 +84,7 @@ Developed by: Vishranthi A
 RegisterNumber: 212221230124 
 */
 ```
-## ENCODER
+### ENCODER
 ```
 module Ex08(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
 input d0,d1,d2,d3,d4,d5,d6,d7;
@@ -101,12 +101,33 @@ endmodule
 ### TIMING DIGRAMS  
 <img width="356" alt="171608248-31d6098c-6402-415a-a4e4-fea3e357f9f4" src="https://user-images.githubusercontent.com/93427278/171614925-c5222132-30ad-4181-8195-cecb73cb2b22.png">
 
-### TRUTH TABLE 
+ ### TRUTH TABLE
 ![171608406-f2a1ea02-4605-4c44-a5bb-3524796fae5b](https://user-images.githubusercontent.com/93427278/171614942-48333afd-ef8a-4c6c-8d4b-71ae83d787b1.png)
 
+### ENCODER
+```
+module Ex08(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+input a,b,c;
+output d0,d1,d2,d3,d4,d5,d6,d7;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+endmodule
+```
 
+### RTL LOGIC
+![171608672-709d8e37-0ae0-4722-b074-68eccba9040d](https://user-images.githubusercontent.com/93427278/171640734-88d96405-48c5-4529-a7d7-9e4c7bed0635.png)
 
+### TIMING DIGRAMS
+<img width="1262" alt="171608728-64ad0793-067c-4bc7-826b-8aa024e91b95" src="https://user-images.githubusercontent.com/93427278/171640762-e00e319c-5d9a-4644-b96c-992ff7c83d81.png">
 
-
+### TRUTH TABLE
+![171608795-74b6b293-09a3-4343-843a-8c6da756cde8](https://user-images.githubusercontent.com/93427278/171640809-846b877d-70fa-4990-96ef-9b96240fb9f4.jpg)
 
 ### RESULTS 
+Thus, 8 to 3 Encoder and 3 to 8 Decoder is implemented using verilog and its outputs is validated.
